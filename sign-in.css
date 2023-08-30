@@ -1,0 +1,84 @@
+@import url('/css/noto-serif-font.css');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Noto Serif";
+}
+
+header {
+    text-align: center;
+    box-shadow: 0 0 5px 0 #000;
+    margin-bottom: 10px;
+}
+
+header a {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #00f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.sign-in-container {
+    width: 100%;
+    margin: 5px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 #000;
+}
+.container-title {
+    color: white;
+    background-color: #00f;
+    font-size: x-large;
+    font-weight: bold;
+}
+.sign-in-container form {
+    position: relative;
+    padding: 5px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.sign-in-container form label {
+    text-align: left;
+    display: block;
+}
+
+.sign-in-container form input {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: medium;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 1px #000;
+}
+.sign-in-container form input[type="submit"] {
+    background-color: #f00;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.sign-in-container form div {
+    margin-right: -10px;
+}
+.sign-in-container form input[type="submit"]:hover {
+    background-color: #00f;
+}
+footer {
+    background-color: #00f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

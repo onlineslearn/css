@@ -1,0 +1,36 @@
+@import url('/textmate/css/header-footer.css');
+.container-card{
+    background:url('/textmate/img/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter:blur(10px);
+    color: white;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-card-item{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: large;
+    font-weight: bolder;
+}
+.container-card-item svg{
+    fill: white;
+    width: 200px;
+}
+.container-content-parent{
+    display: flex;
+    justify-content: center;
+}
+.container-content{
+    padding: 5px;
+    max-width: 600px;
+}
+@media screen and (max-width:400px) {
+    .container-card{
+        display: block;
+    }
+}

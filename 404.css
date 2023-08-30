@@ -1,0 +1,33 @@
+@import url('/css/noto-serif-font.css');
+@import url('/textmate/css/header-footer.css');
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 80vh;
+}
+.container-box{
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 2px 0;
+}
+.box-title{
+    background-color: #f00;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+.box-message{
+    padding: 5px;
+    color: #00f;
+}
+.box-message a{
+    color: #f00;
+}
+.container-box svg{
+    width: 150px;
+    fill: #f00;
+}

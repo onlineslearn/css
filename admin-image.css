@@ -1,0 +1,234 @@
+@import url('/textmate/css/header-footer.css');
+header{
+    overflow: unset;
+}
+.custom-context-menu{
+    position: absolute;
+    width: 200px;
+    display: none;
+    box-shadow: 1px 1px 5px 0;
+    background-color:white;
+    z-index: 10;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.custom-context-menu label{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    color: #00f;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 0 0 1px 0;
+    transition: 0.2s;
+}
+.custom-context-menu label:hover{
+    background-color: #00f;
+    color: white;
+}
+.custom-context-menu label:active{
+    background-color: #f00;
+}
+.container-card{
+    display: flex;
+}
+#index-request-form{
+    margin-right: 2px;
+    border-right: 1px solid;
+    min-height: 90vh;
+}
+#index-request-form .form-object{
+    width: 250px;
+    position: sticky;
+    top: 0;
+}
+#index-request-form .form-object .form-title, #delete-request-form .form-title{
+    background-color: #00f;
+    font-size: large;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+#index-request-form .form-object .input-group{
+    padding: 5px;
+}
+#index-request-form .form-object .input-group label{
+    display: block;
+    text-align: center;
+}
+#index-request-form .form-object .input-group input[type="url"],#index-request-form .form-object .input-group input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color:whitesmoke;
+    border: 1px solid;
+    margin: 5px 0;
+}
+#index-request-form .form-object .input-group .btn-group{
+    display: flex;
+}
+#index-request-form .form-object .input-group .btn-group input{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #00f;
+    font-size: large;
+    border: none;
+    padding: 5px 0;
+    outline: none;
+    cursor: pointer;
+}
+#index-request-form .form-object .input-group .btn-group input[type="reset"]{
+    margin-right: 1px;
+}
+#index-request-form .form-object .input-group .btn-group input[type="submit"]{
+    margin-left: 1px;
+}
+#delete-request-form{
+    width: 100%;
+    overflow: hidden;
+}
+.image-card-item{
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;
+}
+.image-card-item:hover{
+    background-color:#f00;
+    color: white;
+    fill: white;
+}
+.image-card-item svg{
+    min-width: 48px;
+    max-width: 48px;
+}
+.image-card-item .item-detail{
+    font-size: small;
+    position: relative;
+}
+.image-card-item .item-detail label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+}
+.container{
+    margin-bottom: 5px;
+}
+#index-request-form .form-object label[for="navigationbar"]{
+    display: none;
+}
+#delete-confirm-dialog{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 100vh;
+}
+#dialog-container{
+    width: 250px;
+    background-color: white;
+}
+#dialog-container .dialog-title{
+    font-size: x-large;
+    text-align: center;
+    background-color: #f00;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+#dialog-container .dialog-message{
+    text-align: center;
+    color: #00f;
+    font-size: medium;
+    padding: 5px;
+}
+#dialog-container .dialog-btn-group{
+    display: flex;
+}
+#dialog-container .dialog-btn-group input{
+    width: 100%;
+    margin: 1px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: #00f;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+}
+#dialog-container .dialog-btn-group input:hover{
+    background-color: #00c;
+}
+@media (width<700px) {
+    .container-card{
+        display: unset;
+    }
+    #index-request-form{
+        width: 100%;
+        height: 100vh;
+        border-right: none;
+        margin: unset;
+        background-color: rgba(0, 0, 0, 0.411);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    #index-request-form .form-object{
+        background-color: white;
+        position: relative;
+    }
+    #index-request-form .form-object label[for="navigationbar"]{
+        position: absolute;
+        right: 0;
+        fill: white;
+        display: block;
+        cursor: pointer;
+    }
+    #navigationbar:checked ~ #index-request-form{
+        display: flex;
+    }
+    header label[for="navigationbar"] svg{
+        display: block;
+    }
+}
+.loading-progress-bar {
+    margin: 5px 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #0f0;
+    position: relative;
+    display: none;
+    animation: progressbar 1s infinite;
+}
+
+.loading-tile {
+    padding: 4px;
+    background-color: #00f;
+    width: 20%;
+    border-radius: 5px;
+}
+@keyframes progressbar {
+    from {
+        padding-left: 0;
+    }
+
+    to {
+        padding-left: 95%;
+    }
+}

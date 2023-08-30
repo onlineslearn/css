@@ -1,0 +1,105 @@
+.container-tools{
+    display: flex;
+    justify-content: space-around;
+}
+.container-tools input[type="button"]{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: medium;
+    font-weight: lighter;
+    padding: 5px;
+    background-color: #00f;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 0 1px;
+}
+.container-tools input[type="button"]:hover{
+    background-color: #00c;
+}
+.container-input-group{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-input-group input, .container-input-group label{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+.editable-container{
+    padding: 5px;
+}
+.editable-element{
+    border: 1px solid;
+    padding: 5px;
+    overflow-y: auto;
+    height: 80vh;
+}
+.edit-tools label{
+    width: 100px;
+}
+.edit-tools label svg{
+    fill: #00f;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.edit-tools label svg:hover{
+    fill: #f00;
+}
+.edit-tools{
+    overflow-x: auto;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid;
+}
+.edit-tools::-webkit-scrollbar{
+    display: none;
+}
+iframe[name="richTextEditor"],#rich-textarea{
+    width: 100%;
+    height: 80vh;
+    resize: none;
+}
+#rich-textarea{
+    padding: 5px;
+    display: none;
+}
+#custom-context-menu{
+    position: absolute;
+    background-color: white;
+}
+#editor-mode{
+    display: none;
+}
+#editor-mode:checked ~ .rich-text-btn{
+    display: none;
+}
+.loading-progress-bar {
+    margin: 5px 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #0f0;
+    position: relative;
+    display: none;
+    animation: progressbar 1s infinite;
+}
+.loading-tile {
+    padding: 4px;
+    background-color: #00f;
+    width: 20%;
+    border-radius: 5px;
+}
+@keyframes progressbar {
+    from {
+        padding-left: 0;
+    }
+
+    to {
+        padding-left: 95%;
+    }
+}

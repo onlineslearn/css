@@ -1,0 +1,39 @@
+@import url('/textmate/css/blogs.css');
+h1.post-title{
+    margin: 0;
+    text-align: left;
+    background-color: unset;
+    color: #f00;
+    text-transform: uppercase;
+    overflow: unset;
+    display: unset;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+}
+.post-time{
+    font-weight: bold;
+}
+.post-content{
+    padding: 5px;
+    border-top: 1px solid;
+}
+.breadcrumb{
+    list-style: none;
+    padding: 5px 0;
+}
+.breadcrumb svg{
+    width: 20px;
+    fill: #00f;
+}
+.breadcrumb li{
+    display: inline;
+    color: #00f;
+    font-size: larger;
+    font-weight: bold;
+}
+.breadcrumb li::before{
+    padding: 5px;
+    color: #00f;
+    font-weight: bold;
+    content: '\003E';
+}

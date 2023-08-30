@@ -1,0 +1,119 @@
+@import url('/textmate/css/header-footer.css');
+.container{
+    padding: 5px;
+    position: relative;
+}
+.post-list-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.post-list-container .post-card{
+    width: 100%;
+    height: 100%;
+    margin: 2px 0;
+    transition: 0.2s;
+    box-shadow: 0 0 2px 0;
+}
+.post-card:hover{
+    background-color: aliceblue;
+}
+.post-list-container .post-card img{
+    width: 100%;
+}
+.post-list-container .post-card .post-title{
+    overflow: hidden;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0 5px;
+    width: 100%;
+    color: #00f;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.post-list-container .post-card .post-description{
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: x-small;
+    font-weight: lighter;
+    text-align: justify;
+    width: 100%;
+    color: rgb(98, 17, 179);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.post-list-container .post-card .post-info{
+    font-size: small;
+    font-weight: bold;
+    padding: 0 5px;
+    color: #f00;
+}
+@media (width>800px) {
+    .container{
+        display: flex;
+    }
+    .post-list-container{
+        width: 66.66%;
+        padding: 5px;
+        max-width: 1920px;
+    }
+    .post-sidebar-container{
+        width: 33.33%;
+        padding: 5px;
+        max-width: 640px;
+    }
+    .sidebar-content{
+        position: sticky;
+        top: 5px;
+        background-color: white;
+    }
+}
+@media (width>400px) {
+    .post-list-container{
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (width>600px) {
+    .post-list-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (width>600px) {
+    .post-list-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (width>800px) {
+    .post-list-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (width>1000px) {
+    .post-list-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (width>1200px) {
+    .post-list-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (width>1400px) {
+    .post-list-container{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+@media (width>1600px) {
+    .post-list-container{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+@media (width>1800px) {
+    .post-list-container{
+        grid-template-columns: repeat(7,1fr);
+    }
+}

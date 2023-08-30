@@ -1,0 +1,64 @@
+@import url('/css/noto-serif-font.css');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Noto Serif";
+}
+body header{
+    text-align: center;
+    color: #f00;
+    font-family: 'Noto Serif';
+    background-color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    box-shadow: 0 0 5px 0 #000;
+}
+body header img{
+    height: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+#sign-in-to-continue{
+    box-shadow: 0 0 2px 0 #000;
+    margin: 5px;
+    max-width: 300px;
+}
+.form-title{
+    text-align: center;
+    background-color: #f00;
+    color: white;
+    font-size: x-large;
+    padding: 5px;
+    font-weight: bold;
+}
+.input-fields{
+    padding: 5px;
+    padding-right: 10px;
+}
+.input-fields input{
+    width: 100%;
+    outline: none;
+    padding: 5px 0px;
+    margin: 1px 0;
+}
+.input-submit{
+    margin-right: -4px;
+}
+.input-submit input[type="submit"]{
+    font-size: large;
+    color: white;
+    cursor: pointer;
+    background-color: #00f;
+    font-weight: bold;
+    border: none;
+}
+#sign-in-to-continue .message{
+    background-color: #00f;
+    color: white;
+    text-align: center;
+}

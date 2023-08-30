@@ -1,0 +1,229 @@
+@import url('/css/noto-serif-font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Noto Serif";
+}
+
+header {
+    text-align: center;
+    box-shadow: 0 0 5px 0 #000;
+    margin-bottom: 10px;
+}
+
+header a {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #00f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container-dialog {
+    width: 100%;
+    margin: 5px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 #000;
+}
+
+.dialog-title {
+    color: white;
+    background-color: #00f;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container-dialog form {
+    position: relative;
+    padding: 5px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.container-dialog form label {
+    text-align: left;
+    display: block;
+}
+
+.container-dialog form input {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: medium;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 1px #000;
+}
+
+.container-dialog form input[type="number"]::-webkit-outer-spin-button, .container-dialog form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+.phone-number{
+    display: flex;
+    box-shadow: 0 0 0 1px #000;
+    border-radius: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+.phone-number label{
+    font-size: medium;
+}
+.phone-number input{
+    padding: 0 !important;
+    box-shadow:unset !important;
+}
+.container-dialog form div {
+    margin-right: -10px;
+}
+.person-gender{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.person-gender label{
+    margin-left: 5px;
+    padding: 5px;
+}
+.person-gender input[type="radio"]{
+    box-shadow: 0 0 0 0;
+    width: unset;
+    margin: unset;
+    margin-right: 5px;
+}
+input[readonly]{
+    background-color:whitesmoke;
+}
+#fill-up-dialog{
+    /* display: none; */
+}
+#verify-phone-number-dialog{
+    display: none;
+}
+.user-agreement{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.user-agreement input[type="checkbox"]{
+    width: auto;
+    margin: 0;
+    margin-right: 5px;
+    box-shadow: none !important;
+}
+.container-dialog form input[type="submit"] {
+    background-color: #f00;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.container-dialog form input[type="submit"]:hover {
+    background-color: #00f;
+}
+.OTP-btn-div{
+    display: flex;
+}
+.OTP-btn-div input{
+    box-shadow: 0 0 0 0 !important;
+    background-color: #00f !important;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.OTP-btn-div input[type="button"]{
+    margin-right: 2px;
+}
+.OTP-btn-div input[type="submit"]{
+    margin-left: 2px;
+}
+.OTP-btn-div input:hover{
+    background-color: #f00 !important;
+}
+footer {
+    background-color: #00f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#custom-alert{
+    position: fixed;
+    display: none;
+    transition: 1s ease;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.alert-dialog{
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+}
+#dialog-title{
+    background-color: #f00;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+}
+#dialog-message{
+    padding: 5px;
+}
+.alert-submit{
+    padding: 5px;
+}
+#alert-accepted{
+    width: 100%;
+    border: none;
+    background-color: #00f;
+    padding: 5px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+#alert-accepted:hover{
+    background-color: #f00;
+}
+.progress-bar{
+    position: relative;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.progress-proccess{
+    position: absolute;
+    padding: 5px;
+    background-color: #f00;
+    width: 50px;
+    border-radius: 10px;
+    transition: 2s;
+    animation: progressbar 1s infinite;
+}
+@keyframes progressbar{
+    0%{
+        left: -50px;
+    } 100%{
+        left: 100%;
+    }
+}

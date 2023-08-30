@@ -1,0 +1,79 @@
+@import url('/css/noto-serif-font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Noto Serif";
+    box-sizing: border-box;
+}
+
+body header {
+    text-align: center;
+    color: #f00;
+    font-family: 'Noto Serif';
+    background-color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+body header img {
+    width: 200px;
+}
+
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-items .item {
+    text-align: center;
+}
+
+.container-items .item div {
+    background-color: #00f;
+    padding: 5px;
+    margin: 1px;
+}
+
+.container-items .item svg {
+    width: 80%;
+    fill: white;
+}
+
+@media screen and (min-width:300px) {
+    .container-items .item {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .container-items .item {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .container-items .item {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container-items .item {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .container-items .item {
+        width: 16.66%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .container-items .item {
+        width: 14.28%;
+    }
+}
